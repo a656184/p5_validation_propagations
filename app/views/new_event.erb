@@ -1,0 +1,36 @@
+
+  <h1>Create an Event!</h1>
+  <% if @errors %>
+    <div class="errors">
+      <h4>Invalid Sign-Up!</h4>
+      <ul>
+        <% @errors.full_messages.each do |error| %>
+          <li><%= error %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <form id="create_event" method="post" action="/events/create">
+     
+     <label class="label" for="event_title">Event Title:</label>
+     <input type="text" name="event[title]">
+     <br>
+
+     <label class="label" for="event_date">Date of Event:</label>
+     <input type="date" name="event[date]">
+     <br>
+
+     <label class="label" for="organizer_name">Organizer Name:</label>
+     <input type="text" name="event[organizer_name]">
+     <br>
+
+     <label class="label" for="organizer_email">Organizer Email:</label>
+     <input type="text" name="event[organizer_email]">
+     <br>
+
+     <div class="submit"><input type="submit" value="Create"></div>
+
+  </form>
+
+

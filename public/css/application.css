@@ -54,8 +54,32 @@ input {
   margin-bottom: 10px;
 }
 
+h1 {
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .errors {
   color: red;
+  border: red;
+  padding: 10px;
+  border: 1px darksalmon solid;
+  background: #f0dddd;
+  width: 40%;
+
+}
+
+form {
+  padding-top: 15px;
+}
+
+ul {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 form.quirks {
